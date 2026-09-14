@@ -1,0 +1,18 @@
+name: dh
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas>=2.2
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - lightgbm
+  - shap
+  - joblib
+  - pyreadstat
+  - python-docx
+  - openpyxl
+  - pymupdf

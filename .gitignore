@@ -1,0 +1,17 @@
+# KNHANES 원시자료는 재배포 금지 — 각자 질병관리청에서 받아 넣기
+data/knhanes/**
+!data/knhanes/README.md
+*.sas7bdat
+*.zip
+
+# 분석 산출물
+**/results/
+**/figures/*.png
+*.pkl
+*.parquet
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+~$*.docx

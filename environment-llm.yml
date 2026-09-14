@@ -1,0 +1,16 @@
+# T2 전용 (로컬 LLM, GPU 필요)
+name: dh-llm
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pandas
+  - scikit-learn
+  - pyreadstat
+  - lightgbm
+  - matplotlib
+  - pip
+  - pip:
+      - torch
+      - transformers
+      - accelerate
+      - huggingface_hub
