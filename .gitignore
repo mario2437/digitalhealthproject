@@ -15,3 +15,8 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 ~$*.docx
+
+# 예외: T3-1 KSC2026 최종본 재현 자료는 결과·그림까지 공개 (MSK-MET 파생, ODbL)
+!T3-1/final/results/
+!T3-1/final/results/**
+!T3-1/final/figures/*.png

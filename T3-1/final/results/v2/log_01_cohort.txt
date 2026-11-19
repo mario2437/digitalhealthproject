@@ -1,0 +1,126 @@
+{
+ "전체 샘플(=환자)": 25775,
+ "제외: 전이 부위 미매핑": 4229,
+ "제외: Metastasis 검체(민감도에만)": 9805,
+ "제외: 원발 불명": 0,
+ "제외: 유전체 프로파일 없음": 0,
+ "주 분석 코호트": 11741,
+ "민감도 코호트": 21546,
+ "원발암 종류 수": 27,
+ "패널": {
+  "IMPACT468": 8048,
+  "IMPACT410": 2822,
+  "IMPACT341": 871
+ },
+ "ID 접미사-패널 일치(IM3=341, IM5=410, IM6=468)": true,
+ "PID_NUM-패널 순서 Spearman": 0.807,
+ "PID_NUM 패널별 중앙값": {
+  "IMPACT341": 1606,
+  "IMPACT410": 8139,
+  "IMPACT468": 30826
+ },
+ "PID 십분위별 패널 구성": {
+  "D1": {
+   "IMPACT341": 867,
+   "IMPACT410": 296,
+   "IMPACT468": 12
+  },
+  "D2": {
+   "IMPACT341": 4,
+   "IMPACT410": 1147,
+   "IMPACT468": 23
+  },
+  "D3": {
+   "IMPACT341": 0,
+   "IMPACT410": 1136,
+   "IMPACT468": 38
+  },
+  "D4": {
+   "IMPACT341": 0,
+   "IMPACT410": 243,
+   "IMPACT468": 931
+  },
+  "D5": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  },
+  "D6": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  },
+  "D7": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  },
+  "D8": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  },
+  "D9": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  },
+  "D10": {
+   "IMPACT341": 0,
+   "IMPACT410": 0,
+   "IMPACT468": 1174
+  }
+ },
+ "SAMPLE_ORDER>1 비율": 0.0577,
+ "SEQ_LAG_YEARS 중앙값[IQR], 결측": [
+  0.24,
+  0.05,
+  1.06,
+  345
+ ],
+ "SEQ_LAG_YEARS 음수(0으로 두지 않고 결측 처리)": 0,
+ "흔적 간 Spearman": {
+  "PID_NUM": {
+   "PID_NUM": 1.0,
+   "TUMOR_PURITY": -0.09,
+   "SAMPLE_COVERAGE": -0.25,
+   "SEQ_LAG_YEARS": -0.11,
+   "OS_MONTHS": -0.3
+  },
+  "TUMOR_PURITY": {
+   "PID_NUM": -0.09,
+   "TUMOR_PURITY": 1.0,
+   "SAMPLE_COVERAGE": 0.02,
+   "SEQ_LAG_YEARS": 0.12,
+   "OS_MONTHS": 0.03
+  },
+  "SAMPLE_COVERAGE": {
+   "PID_NUM": -0.25,
+   "TUMOR_PURITY": 0.02,
+   "SAMPLE_COVERAGE": 1.0,
+   "SEQ_LAG_YEARS": -0.29,
+   "OS_MONTHS": 0.14
+  },
+  "SEQ_LAG_YEARS": {
+   "PID_NUM": -0.11,
+   "TUMOR_PURITY": 0.12,
+   "SAMPLE_COVERAGE": -0.29,
+   "SEQ_LAG_YEARS": 1.0,
+   "OS_MONTHS": -0.08
+  },
+  "OS_MONTHS": {
+   "PID_NUM": -0.3,
+   "TUMOR_PURITY": 0.03,
+   "SAMPLE_COVERAGE": 0.14,
+   "SEQ_LAG_YEARS": -0.08,
+   "OS_MONTHS": 1.0
+  }
+ }
+}
+            PID_NUM  TUMOR_PURITY  ...  OS_MONTHS     N
+GENE_PANEL                         ...                 
+IMPACT341    1606.0          40.0  ...      17.35   871
+IMPACT410    8139.0          40.0  ...      26.25  2822
+IMPACT468   30826.0          30.0  ...      17.46  8048
+
+[3 rows x 6 columns]

@@ -1,0 +1,51 @@
+{
+  "HD7 충족 장기(PID 퍼뮤테이션 CI>0 & 영 특징 상한 초과)": {
+    "DMETS_DX_LUNG": true,
+    "DMETS_DX_LIVER": true,
+    "DMETS_DX_BONE": true,
+    "DMETS_DX_CNS_BRAIN": true,
+    "DMETS_DX_INTRA_ABDOMINAL": true
+  },
+  "HD7 판정(>=2/5)": true,
+  "HD8 충족 장기(외부 A_시기 ΔAUROC<=0.005)": {
+    "DMETS_DX_LUNG": true,
+    "DMETS_DX_LIVER": true,
+    "DMETS_DX_BONE": true,
+    "DMETS_DX_CNS_BRAIN": true,
+    "DMETS_DX_INTRA_ABDOMINAL": true
+  },
+  "HD8 판정(>=4/5)": true,
+  "영 특징 SHAP 순위": {
+    "DMETS_DX_BONE": {
+      "NULL_BINARY": 118.0,
+      "NULL_NORMAL": 16.0,
+      "NULL_RANKINT": 15.0
+    },
+    "DMETS_DX_CNS_BRAIN": {
+      "NULL_BINARY": 84.0,
+      "NULL_NORMAL": 12.0,
+      "NULL_RANKINT": 11.0
+    },
+    "DMETS_DX_INTRA_ABDOMINAL": {
+      "NULL_BINARY": 40.0,
+      "NULL_NORMAL": 18.0,
+      "NULL_RANKINT": 16.0
+    },
+    "DMETS_DX_LIVER": {
+      "NULL_BINARY": 77.0,
+      "NULL_NORMAL": 17.0,
+      "NULL_RANKINT": 15.0
+    },
+    "DMETS_DX_LUNG": {
+      "NULL_BINARY": 116.0,
+      "NULL_NORMAL": 13.0,
+      "NULL_RANKINT": 14.0
+    },
+    "HIGH_BURDEN": {
+      "NULL_BINARY": 112.0,
+      "NULL_NORMAL": 13.0,
+      "NULL_RANKINT": 16.0
+    }
+  },
+  "N 특징": 283
+}

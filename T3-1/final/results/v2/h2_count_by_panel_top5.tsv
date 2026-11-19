@@ -1,0 +1,8 @@
+	mean	mean	mean	size	size	size
+panel	IMPACT341	IMPACT410	IMPACT468	IMPACT341	IMPACT410	IMPACT468
+ctype						
+Breast Cancer	4.26	3.59	2.57	123	264	574
+Colorectal Cancer	4.47	3.57	2.92	86	397	1607
+Non-Small Cell Lung Cancer	4.0	3.22	2.67	182	595	1423
+Pancreatic Cancer	2.86	3.49	2.91	14	276	754
+Prostate Cancer	2.86	2.74	2.28	65	217	657

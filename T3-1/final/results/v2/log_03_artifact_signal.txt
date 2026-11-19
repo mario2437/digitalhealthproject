@@ -1,0 +1,103 @@
+DMETS_DX_LUNG A X=(11741, 8) 3.7s
+DMETS_DX_LUNG T X=(11741, 27) 3.0s
+DMETS_DX_LUNG T+A X=(11741, 35) 4.8s
+DMETS_DX_LUNG B X=(11741, 272) 7.8s
+DMETS_DX_LUNG B+A X=(11741, 280) 9.8s
+DMETS_DX_LIVER A X=(11741, 8) 5.3s
+DMETS_DX_LIVER T X=(11741, 27) 3.7s
+DMETS_DX_LIVER T+A X=(11741, 35) 5.6s
+DMETS_DX_LIVER B X=(11741, 272) 8.7s
+DMETS_DX_LIVER B+A X=(11741, 280) 8.6s
+DMETS_DX_BONE A X=(11741, 8) 4.1s
+DMETS_DX_BONE T X=(11741, 27) 2.4s
+DMETS_DX_BONE T+A X=(11741, 35) 3.9s
+DMETS_DX_BONE B X=(11741, 272) 5.3s
+DMETS_DX_BONE B+A X=(11741, 280) 6.0s
+DMETS_DX_CNS_BRAIN A X=(11741, 8) 3.4s
+DMETS_DX_CNS_BRAIN T X=(11741, 27) 1.8s
+DMETS_DX_CNS_BRAIN T+A X=(11741, 35) 3.4s
+DMETS_DX_CNS_BRAIN B X=(11741, 272) 5.0s
+DMETS_DX_CNS_BRAIN B+A X=(11741, 280) 5.8s
+DMETS_DX_INTRA_ABDOMINAL A X=(11741, 8) 3.0s
+DMETS_DX_INTRA_ABDOMINAL T X=(11741, 27) 2.2s
+DMETS_DX_INTRA_ABDOMINAL T+A X=(11741, 35) 3.2s
+DMETS_DX_INTRA_ABDOMINAL B X=(11741, 272) 4.9s
+DMETS_DX_INTRA_ABDOMINAL B+A X=(11741, 280) 5.6s
+HIGH_BURDEN A X=(11741, 8) 2.9s
+HIGH_BURDEN T X=(11741, 27) 2.2s
+HIGH_BURDEN T+A X=(11741, 35) 3.1s
+HIGH_BURDEN B X=(11741, 272) 4.7s
+HIGH_BURDEN B+A X=(11741, 280) 5.3s
+DMETS_DX_LUNG T X=(21546, 28) 3.1s
+DMETS_DX_LUNG T+A X=(21546, 36) 3.5s
+DMETS_DX_LIVER T X=(21546, 28) 2.6s
+DMETS_DX_LIVER T+A X=(21546, 36) 3.4s
+DMETS_DX_BONE T X=(21546, 28) 3.5s
+DMETS_DX_BONE T+A X=(21546, 36) 4.1s
+DMETS_DX_CNS_BRAIN T X=(21546, 28) 3.3s
+DMETS_DX_CNS_BRAIN T+A X=(21546, 36) 4.1s
+DMETS_DX_INTRA_ABDOMINAL T X=(21546, 28) 3.7s
+DMETS_DX_INTRA_ABDOMINAL T+A X=(21546, 36) 4.4s
+HIGH_BURDEN T X=(21546, 28) 3.6s
+HIGH_BURDEN T+A X=(21546, 36) 4.1s
+model      A      B    B+A      T    T+A
+결과                                      
+간      0.589  0.756  0.779  0.730  0.765
+뇌      0.610  0.764  0.780  0.759  0.775
+복강내    0.571  0.790  0.803  0.786  0.792
+부담≥3   0.587  0.643  0.684  0.595  0.660
+뼈      0.618  0.722  0.746  0.704  0.733
+폐      0.587  0.707  0.731  0.684  0.714
+model      A      B    B+A      T    T+A
+결과                                      
+간      0.573  0.755  0.775  0.738  0.760
+뇌      0.570  0.756  0.767  0.759  0.763
+복강내    0.571  0.791  0.802  0.788  0.791
+부담≥3   0.557  0.635  0.665  0.602  0.637
+뼈      0.580  0.711  0.730  0.700  0.718
+폐      0.540  0.699  0.715  0.684  0.697
+                     outcome    결과 comparison  panel_stratified   delta   ci_lo   ci_hi
+0              DMETS_DX_LUNG     폐    T+A - T             False  0.0295  0.0214  0.0377
+1              DMETS_DX_LUNG     폐    T+A - T              True  0.0127  0.0050  0.0201
+2              DMETS_DX_LUNG     폐    B+A - B             False  0.0242  0.0186  0.0298
+3              DMETS_DX_LUNG     폐    B+A - B              True  0.0164  0.0110  0.0217
+4              DMETS_DX_LUNG     폐      B - T             False  0.0228  0.0149  0.0307
+5              DMETS_DX_LUNG     폐      B - T              True  0.0149  0.0068  0.0226
+6             DMETS_DX_LIVER     간    T+A - T             False  0.0349  0.0285  0.0411
+7             DMETS_DX_LIVER     간    T+A - T              True  0.0221  0.0162  0.0280
+8             DMETS_DX_LIVER     간    B+A - B             False  0.0233  0.0191  0.0279
+9             DMETS_DX_LIVER     간    B+A - B              True  0.0192  0.0150  0.0233
+10            DMETS_DX_LIVER     간      B - T             False  0.0255  0.0190  0.0322
+11            DMETS_DX_LIVER     간      B - T              True  0.0175  0.0112  0.0241
+12             DMETS_DX_BONE     뼈    T+A - T             False  0.0288  0.0214  0.0361
+13             DMETS_DX_BONE     뼈    T+A - T              True  0.0178  0.0106  0.0251
+14             DMETS_DX_BONE     뼈    B+A - B             False  0.0235  0.0175  0.0292
+15             DMETS_DX_BONE     뼈    B+A - B              True  0.0193  0.0134  0.0249
+16             DMETS_DX_BONE     뼈      B - T             False  0.0184  0.0115  0.0257
+17             DMETS_DX_BONE     뼈      B - T              True  0.0111  0.0039  0.0185
+18        DMETS_DX_CNS_BRAIN     뇌    T+A - T             False  0.0162  0.0065  0.0266
+19        DMETS_DX_CNS_BRAIN     뇌    T+A - T              True  0.0044 -0.0055  0.0150
+20        DMETS_DX_CNS_BRAIN     뇌    B+A - B             False  0.0160  0.0091  0.0229
+21        DMETS_DX_CNS_BRAIN     뇌    B+A - B              True  0.0110  0.0039  0.0182
+22        DMETS_DX_CNS_BRAIN     뇌      B - T             False  0.0051 -0.0052  0.0139
+23        DMETS_DX_CNS_BRAIN     뇌      B - T              True -0.0031 -0.0137  0.0066
+24  DMETS_DX_INTRA_ABDOMINAL   복강내    T+A - T             False  0.0062  0.0008  0.0115
+25  DMETS_DX_INTRA_ABDOMINAL   복강내    T+A - T              True  0.0027 -0.0026  0.0078
+26  DMETS_DX_INTRA_ABDOMINAL   복강내    B+A - B             False  0.0128  0.0092  0.0166
+27  DMETS_DX_INTRA_ABDOMINAL   복강내    B+A - B              True  0.0109  0.0073  0.0145
+28  DMETS_DX_INTRA_ABDOMINAL   복강내      B - T             False  0.0038 -0.0022  0.0097
+29  DMETS_DX_INTRA_ABDOMINAL   복강내      B - T              True  0.0028 -0.0034  0.0086
+30               HIGH_BURDEN  부담≥3    T+A - T             False  0.0648  0.0544  0.0754
+31               HIGH_BURDEN  부담≥3    T+A - T              True  0.0355  0.0259  0.0456
+32               HIGH_BURDEN  부담≥3    B+A - B             False  0.0407  0.0339  0.0479
+33               HIGH_BURDEN  부담≥3    B+A - B              True  0.0298  0.0228  0.0365
+34               HIGH_BURDEN  부담≥3      B - T             False  0.0479  0.0374  0.0584
+35               HIGH_BURDEN  부담≥3      B - T              True  0.0334  0.0227  0.0440
+                    outcome    결과  auroc_T  auroc_TA   delta   ci_lo   ci_hi
+0             DMETS_DX_LUNG     폐   0.6983    0.7177  0.0194  0.0149  0.0238
+1            DMETS_DX_LIVER     간   0.7430    0.7667  0.0237  0.0199  0.0273
+2             DMETS_DX_BONE     뼈   0.7510    0.7717  0.0206  0.0172  0.0242
+3        DMETS_DX_CNS_BRAIN     뇌   0.7807    0.7946  0.0140  0.0094  0.0186
+4  DMETS_DX_INTRA_ABDOMINAL   복강내   0.7910    0.7981  0.0071  0.0041  0.0102
+5               HIGH_BURDEN  부담≥3   0.6452    0.6880  0.0428  0.0369  0.0487
+{'H1 주 기준 충족 장기 수 (Δ>=0.02 & CI하한>0)': 3, 'H1 주 기준 판정 (>=2/5)': True, 'H1 보조: A 단독 AUROC>=0.60 장기 수': 2, 'H1 보조 판정 (>=2/5)': True}

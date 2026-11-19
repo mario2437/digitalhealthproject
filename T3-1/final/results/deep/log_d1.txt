@@ -1,0 +1,21 @@
+tasks 264
+[Parallel(n_jobs=16)]: Using backend LokyBackend with 16 concurrent workers.
+[Parallel(n_jobs=16)]: Done  40 tasks      | elapsed:   34.0s
+[Parallel(n_jobs=16)]: Done 130 tasks      | elapsed:  1.5min
+[Parallel(n_jobs=16)]: Done 264 out of 264 | elapsed:  3.8min finished
+outcome   DMETS_DX_BONE  DMETS_DX_CNS_BRAIN  ...  DMETS_DX_LUNG  HIGH_BURDEN
+strategy                                     ...                            
+S0                0.717               0.793  ...          0.698        0.628
+S1                0.715               0.805  ...          0.691        0.628
+S1b               0.721               0.802  ...          0.692        0.626
+S2                0.713               0.790  ...          0.691        0.624
+S2b               0.705               0.792  ...          0.687        0.615
+S3                0.710               0.804  ...          0.689        0.619
+S4                0.712               0.782  ...          0.695        0.621
+S5a               0.711               0.777  ...          0.695        0.610
+S5b               0.722               0.805  ...          0.698        0.625
+S6                0.715               0.794  ...          0.691        0.606
+S7                0.714               0.800  ...          0.695        0.611
+
+[11 rows x 6 columns]
+done

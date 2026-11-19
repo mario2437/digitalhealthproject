@@ -1,0 +1,129 @@
+temporal DMETS_DX_LUNG T 0.691 0.6813
+temporal DMETS_DX_LUNG B 0.7053 0.6911
+temporal DMETS_DX_LUNG B+A 0.7184 0.6982
+temporal DMETS_DX_LIVER T 0.7433 0.7121
+temporal DMETS_DX_LIVER B 0.7585 0.7327
+temporal DMETS_DX_LIVER B+A 0.78 0.7425
+temporal DMETS_DX_BONE T 0.6884 0.7298
+temporal DMETS_DX_BONE B 0.6983 0.7153
+temporal DMETS_DX_BONE B+A 0.7322 0.7175
+temporal DMETS_DX_CNS_BRAIN T 0.7355 0.8084
+temporal DMETS_DX_CNS_BRAIN B 0.7391 0.8047
+temporal DMETS_DX_CNS_BRAIN B+A 0.7652 0.7931
+temporal DMETS_DX_INTRA_ABDOMINAL T 0.7956 0.7705
+temporal DMETS_DX_INTRA_ABDOMINAL B 0.7943 0.7725
+temporal DMETS_DX_INTRA_ABDOMINAL B+A 0.8051 0.7832
+temporal HIGH_BURDEN T 0.6109 0.5853
+temporal HIGH_BURDEN B 0.6379 0.6283
+temporal HIGH_BURDEN B+A 0.6741 0.6285
+468→341/410 DMETS_DX_LUNG T 0.6812 0.6872
+468→341/410 DMETS_DX_LUNG B 0.6923 0.6956
+468→341/410 DMETS_DX_LUNG B+A 0.7144 0.6937
+468→341/410 DMETS_DX_LIVER T 0.7351 0.7344
+468→341/410 DMETS_DX_LIVER B 0.7499 0.7351
+468→341/410 DMETS_DX_LIVER B+A 0.77 0.75
+468→341/410 DMETS_DX_BONE T 0.6962 0.698
+468→341/410 DMETS_DX_BONE B 0.696 0.7035
+468→341/410 DMETS_DX_BONE B+A 0.7228 0.7087
+468→341/410 DMETS_DX_CNS_BRAIN T 0.7653 0.7243
+468→341/410 DMETS_DX_CNS_BRAIN B 0.7742 0.7048
+468→341/410 DMETS_DX_CNS_BRAIN B+A 0.7869 0.6933
+468→341/410 DMETS_DX_INTRA_ABDOMINAL T 0.7833 0.7922
+468→341/410 DMETS_DX_INTRA_ABDOMINAL B 0.7934 0.7778
+468→341/410 DMETS_DX_INTRA_ABDOMINAL B+A 0.8014 0.7807
+468→341/410 HIGH_BURDEN T 0.6075 0.5809
+468→341/410 HIGH_BURDEN B 0.6449 0.6043
+468→341/410 HIGH_BURDEN B+A 0.6755 0.6157
+341/410→468 DMETS_DX_LUNG T 0.679 0.6705
+341/410→468 DMETS_DX_LUNG B 0.6776 0.6609
+341/410→468 DMETS_DX_LUNG B+A 0.688 0.6646
+341/410→468 DMETS_DX_LIVER T 0.732 0.7329
+341/410→468 DMETS_DX_LIVER B 0.735 0.7251
+341/410→468 DMETS_DX_LIVER B+A 0.751 0.7393
+341/410→468 DMETS_DX_BONE T 0.707 0.6875
+341/410→468 DMETS_DX_BONE B 0.6836 0.6698
+341/410→468 DMETS_DX_BONE B+A 0.7124 0.6803
+341/410→468 DMETS_DX_CNS_BRAIN T 0.7257 0.7738
+341/410→468 DMETS_DX_CNS_BRAIN B 0.7168 0.7129
+341/410→468 DMETS_DX_CNS_BRAIN B+A 0.7331 0.7486
+341/410→468 DMETS_DX_INTRA_ABDOMINAL T 0.7745 0.7889
+341/410→468 DMETS_DX_INTRA_ABDOMINAL B 0.7593 0.7739
+341/410→468 DMETS_DX_INTRA_ABDOMINAL B+A 0.7666 0.7858
+341/410→468 HIGH_BURDEN T 0.5858 0.6012
+341/410→468 HIGH_BURDEN B 0.5929 0.5965
+341/410→468 HIGH_BURDEN B+A 0.612 0.6137
+          split  n_train  n_test                   outcome    결과 model  n_features  auroc_internal  auroc_external  prev_train  prev_test  OE_test    gap
+0      temporal     8219    3522             DMETS_DX_LUNG     폐     T          27           0.691           0.681       0.352      0.229    1.555  0.010
+1      temporal     8219    3522             DMETS_DX_LUNG     폐     B         272           0.705           0.691       0.352      0.229    1.431  0.014
+2      temporal     8219    3522             DMETS_DX_LUNG     폐   B+A         280           0.718           0.698       0.352      0.229    1.334  0.020
+3      temporal     8219    3522            DMETS_DX_LIVER     간     T          27           0.743           0.712       0.361      0.278    1.427  0.031
+4      temporal     8219    3522            DMETS_DX_LIVER     간     B         272           0.759           0.733       0.361      0.278    1.328  0.026
+5      temporal     8219    3522            DMETS_DX_LIVER     간   B+A         280           0.780           0.742       0.361      0.278    1.062  0.037
+6      temporal     8219    3522             DMETS_DX_BONE     뼈     T          27           0.688           0.730       0.304      0.197    1.327 -0.041
+7      temporal     8219    3522             DMETS_DX_BONE     뼈     B         272           0.698           0.715       0.304      0.197    1.209 -0.017
+8      temporal     8219    3522             DMETS_DX_BONE     뼈   B+A         280           0.732           0.717       0.304      0.197    1.075  0.015
+9      temporal     8219    3522        DMETS_DX_CNS_BRAIN     뇌     T          27           0.735           0.808       0.111      0.057    1.599 -0.073
+10     temporal     8219    3522        DMETS_DX_CNS_BRAIN     뇌     B         272           0.739           0.805       0.111      0.057    1.243 -0.066
+11     temporal     8219    3522        DMETS_DX_CNS_BRAIN     뇌   B+A         280           0.765           0.793       0.111      0.057    0.554 -0.028
+12     temporal     8219    3522  DMETS_DX_INTRA_ABDOMINAL   복강내     T          27           0.796           0.770       0.251      0.256    1.227  0.025
+13     temporal     8219    3522  DMETS_DX_INTRA_ABDOMINAL   복강내     B         272           0.794           0.773       0.251      0.256    1.150  0.022
+14     temporal     8219    3522  DMETS_DX_INTRA_ABDOMINAL   복강내   B+A         280           0.805           0.783       0.251      0.256    1.124  0.022
+15     temporal     8219    3522               HIGH_BURDEN  부담≥3     T          27           0.611           0.585       0.540      0.426    1.349  0.026
+16     temporal     8219    3522               HIGH_BURDEN  부담≥3     B         272           0.638           0.628       0.540      0.426    1.285  0.010
+17     temporal     8219    3522               HIGH_BURDEN  부담≥3   B+A         280           0.674           0.628       0.540      0.426    1.395  0.046
+18  468→341/410     8048    3693             DMETS_DX_LUNG     폐     T          27           0.681           0.687       0.270      0.414    0.694 -0.006
+19  468→341/410     8048    3693             DMETS_DX_LUNG     폐     B         272           0.692           0.696       0.270      0.414    0.702 -0.003
+20  468→341/410     8048    3693             DMETS_DX_LUNG     폐   B+A         277           0.714           0.694       0.270      0.414    0.833  0.021
+21  468→341/410     8048    3693            DMETS_DX_LIVER     간     T          27           0.735           0.734       0.305      0.403    0.697  0.001
+22  468→341/410     8048    3693            DMETS_DX_LIVER     간     B         272           0.750           0.735       0.305      0.403    0.725  0.015
+23  468→341/410     8048    3693            DMETS_DX_LIVER     간   B+A         277           0.770           0.750       0.305      0.403    0.905  0.020
+24  468→341/410     8048    3693             DMETS_DX_BONE     뼈     T          27           0.696           0.698       0.228      0.367    0.678 -0.002
+25  468→341/410     8048    3693             DMETS_DX_BONE     뼈     B         272           0.696           0.704       0.228      0.367    0.677 -0.007
+26  468→341/410     8048    3693             DMETS_DX_BONE     뼈   B+A         277           0.723           0.709       0.228      0.367    0.973  0.014
+27  468→341/410     8048    3693        DMETS_DX_CNS_BRAIN     뇌     T          27           0.765           0.724       0.072      0.145    0.575  0.041
+28  468→341/410     8048    3693        DMETS_DX_CNS_BRAIN     뇌     B         272           0.774           0.705       0.072      0.145    0.540  0.069
+29  468→341/410     8048    3693        DMETS_DX_CNS_BRAIN     뇌   B+A         277           0.787           0.693       0.072      0.145    0.636  0.094
+30  468→341/410     8048    3693  DMETS_DX_INTRA_ABDOMINAL   복강내     T          27           0.783           0.792       0.248      0.262    0.790 -0.009
+31  468→341/410     8048    3693  DMETS_DX_INTRA_ABDOMINAL   복강내     B         272           0.793           0.778       0.248      0.262    0.774  0.016
+32  468→341/410     8048    3693  DMETS_DX_INTRA_ABDOMINAL   복강내   B+A         277           0.801           0.781       0.248      0.262    0.834  0.021
+33  468→341/410     8048    3693               HIGH_BURDEN  부담≥3     T          27           0.608           0.581       0.466      0.594    0.759  0.027
+34  468→341/410     8048    3693               HIGH_BURDEN  부담≥3     B         272           0.645           0.604       0.466      0.594    0.770  0.041
+35  468→341/410     8048    3693               HIGH_BURDEN  부담≥3   B+A         277           0.676           0.616       0.466      0.594    1.009  0.060
+36  341/410→468     3693    8048             DMETS_DX_LUNG     폐     T          27           0.679           0.670       0.414      0.270    1.494  0.008
+37  341/410→468     3693    8048             DMETS_DX_LUNG     폐     B         272           0.678           0.661       0.414      0.270    1.406  0.017
+38  341/410→468     3693    8048             DMETS_DX_LUNG     폐   B+A         277           0.688           0.665       0.414      0.270    1.551  0.023
+39  341/410→468     3693    8048            DMETS_DX_LIVER     간     T          27           0.732           0.733       0.403      0.305    1.422 -0.001
+40  341/410→468     3693    8048            DMETS_DX_LIVER     간     B         272           0.735           0.725       0.403      0.305    1.358  0.010
+41  341/410→468     3693    8048            DMETS_DX_LIVER     간   B+A         277           0.751           0.739       0.403      0.305    1.206  0.012
+42  341/410→468     3693    8048             DMETS_DX_BONE     뼈     T          27           0.707           0.688       0.367      0.228    1.474  0.019
+43  341/410→468     3693    8048             DMETS_DX_BONE     뼈     B         272           0.684           0.670       0.367      0.228    1.365  0.014
+44  341/410→468     3693    8048             DMETS_DX_BONE     뼈   B+A         277           0.712           0.680       0.367      0.228    1.411  0.032
+45  341/410→468     3693    8048        DMETS_DX_CNS_BRAIN     뇌     T          27           0.726           0.774       0.145      0.072    1.755 -0.048
+46  341/410→468     3693    8048        DMETS_DX_CNS_BRAIN     뇌     B         272           0.717           0.713       0.145      0.072    1.303  0.004
+47  341/410→468     3693    8048        DMETS_DX_CNS_BRAIN     뇌   B+A         277           0.733           0.749       0.145      0.072    0.706 -0.016
+48  341/410→468     3693    8048  DMETS_DX_INTRA_ABDOMINAL   복강내     T          27           0.775           0.789       0.262      0.248    1.248 -0.014
+49  341/410→468     3693    8048  DMETS_DX_INTRA_ABDOMINAL   복강내     B         272           0.759           0.774       0.262      0.248    1.157 -0.015
+50  341/410→468     3693    8048  DMETS_DX_INTRA_ABDOMINAL   복강내   B+A         277           0.767           0.786       0.262      0.248    0.827 -0.019
+51  341/410→468     3693    8048               HIGH_BURDEN  부담≥3     T          27           0.586           0.601       0.594      0.466    1.309 -0.015
+52  341/410→468     3693    8048               HIGH_BURDEN  부담≥3     B         272           0.593           0.596       0.594      0.466    1.249 -0.004
+53  341/410→468     3693    8048               HIGH_BURDEN  부담≥3   B+A         277           0.612           0.614       0.594      0.466    1.314 -0.002
+          split                   outcome    결과   gap_B  gap_BA  gap_diff   ci_lo   ci_hi  internal_gain_A  external_gain_A
+0      temporal             DMETS_DX_LUNG     폐  0.0142  0.0201    0.0059 -0.0058  0.0175           0.0131           0.0072
+1      temporal            DMETS_DX_LIVER     간  0.0258  0.0375    0.0116  0.0032  0.0194           0.0214           0.0098
+2      temporal             DMETS_DX_BONE     뼈 -0.0170  0.0148    0.0318  0.0165  0.0468           0.0340           0.0021
+3      temporal        DMETS_DX_CNS_BRAIN     뇌 -0.0656 -0.0279    0.0377  0.0172  0.0596           0.0262          -0.0116
+4      temporal  DMETS_DX_INTRA_ABDOMINAL   복강내  0.0218  0.0218    0.0001 -0.0081  0.0083           0.0108           0.0107
+5      temporal               HIGH_BURDEN  부담≥3  0.0096  0.0456    0.0360  0.0221  0.0497           0.0362           0.0001
+6   468→341/410             DMETS_DX_LUNG     폐 -0.0033  0.0207    0.0240  0.0125  0.0352           0.0221          -0.0019
+7   468→341/410            DMETS_DX_LIVER     간  0.0148  0.0199    0.0052 -0.0035  0.0140           0.0201           0.0149
+8   468→341/410             DMETS_DX_BONE     뼈 -0.0075  0.0141    0.0216  0.0084  0.0351           0.0268           0.0051
+9   468→341/410        DMETS_DX_CNS_BRAIN     뇌  0.0694  0.0936    0.0242  0.0060  0.0407           0.0128          -0.0115
+10  468→341/410  DMETS_DX_INTRA_ABDOMINAL   복강내  0.0157  0.0207    0.0050 -0.0033  0.0132           0.0079           0.0029
+11  468→341/410               HIGH_BURDEN  부담≥3  0.0406  0.0598    0.0192  0.0044  0.0344           0.0306           0.0114
+12  341/410→468             DMETS_DX_LUNG     폐  0.0167  0.0234    0.0067 -0.0065  0.0191           0.0103           0.0037
+13  341/410→468            DMETS_DX_LIVER     간  0.0099  0.0117    0.0017 -0.0090  0.0124           0.0160           0.0142
+14  341/410→468             DMETS_DX_BONE     뼈  0.0138  0.0321    0.0184  0.0048  0.0320           0.0288           0.0104
+15  341/410→468        DMETS_DX_CNS_BRAIN     뇌  0.0040 -0.0155   -0.0195 -0.0372 -0.0025           0.0163           0.0358
+16  341/410→468  DMETS_DX_INTRA_ABDOMINAL   복강내 -0.0146 -0.0192   -0.0046 -0.0151  0.0064           0.0073           0.0119
+17  341/410→468               HIGH_BURDEN  부담≥3 -0.0035 -0.0017    0.0018 -0.0143  0.0173           0.0191           0.0173
+{'시간 분할 PID_NUM 기준값': 33141.0, '시험 세트 패널 구성': {'IMPACT468': 3522}, 'H3 충족 장기 수 (격차 차이>=0.02)': 2, 'H3 판정 (>=2/5)': True, '보조: CI 하한>0 장기 수': 3}

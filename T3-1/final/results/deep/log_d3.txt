@@ -1,0 +1,100 @@
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done DMETS_DX_LUNG
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done DMETS_DX_LIVER
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done DMETS_DX_BONE
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done DMETS_DX_CNS_BRAIN
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done DMETS_DX_INTRA_ABDOMINAL
+<site-packages>/shap/explainers/_tree.py:632: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+fit done HIGH_BURDEN
+{
+ "HD7 충족 장기(PID 퍼뮤테이션 CI>0 & 영 특징 상한 초과)": {
+  "DMETS_DX_LUNG": true,
+  "DMETS_DX_LIVER": true,
+  "DMETS_DX_BONE": true,
+  "DMETS_DX_CNS_BRAIN": true,
+  "DMETS_DX_INTRA_ABDOMINAL": true
+ },
+ "HD7 판정(>=2/5)": true,
+ "HD8 충족 장기(외부 A_시기 ΔAUROC<=0.005)": {
+  "DMETS_DX_LUNG": true,
+  "DMETS_DX_LIVER": true,
+  "DMETS_DX_BONE": true,
+  "DMETS_DX_CNS_BRAIN": true,
+  "DMETS_DX_INTRA_ABDOMINAL": true
+ },
+ "HD8 판정(>=4/5)": true,
+ "영 특징 SHAP 순위": {
+  "DMETS_DX_BONE": {
+   "NULL_BINARY": 118.0,
+   "NULL_NORMAL": 16.0,
+   "NULL_RANKINT": 15.0
+  },
+  "DMETS_DX_CNS_BRAIN": {
+   "NULL_BINARY": 84.0,
+   "NULL_NORMAL": 12.0,
+   "NULL_RANKINT": 11.0
+  },
+  "DMETS_DX_INTRA_ABDOMINAL": {
+   "NULL_BINARY": 40.0,
+   "NULL_NORMAL": 18.0,
+   "NULL_RANKINT": 16.0
+  },
+  "DMETS_DX_LIVER": {
+   "NULL_BINARY": 77.0,
+   "NULL_NORMAL": 17.0,
+   "NULL_RANKINT": 15.0
+  },
+  "DMETS_DX_LUNG": {
+   "NULL_BINARY": 116.0,
+   "NULL_NORMAL": 13.0,
+   "NULL_RANKINT": 14.0
+  },
+  "HIGH_BURDEN": {
+   "NULL_BINARY": 112.0,
+   "NULL_NORMAL": 13.0,
+   "NULL_RANKINT": 16.0
+  }
+ },
+ "N 특징": 283
+}
+결과                    간       뇌     복강내    부담≥3       뼈       폐
+item                                                           
+A_시기             0.0240  0.0297  0.0045  0.0467  0.0258  0.0301
+A_전체             0.0469  0.0459  0.0178  0.0758  0.0679  0.0517
+A_품질             0.0192  0.0114  0.0119  0.0261  0.0301  0.0173
+C                0.0231  0.0195  0.0127  0.0379  0.0262  0.0161
+G                0.0152  0.0036  0.0158  0.0187  0.0099  0.0180
+NULL_BINARY      0.0000 -0.0000 -0.0002 -0.0001 -0.0001 -0.0002
+NULL_NORMAL      0.0003  0.0001 -0.0009  0.0013 -0.0007  0.0015
+NULL_RANKINT     0.0002 -0.0001  0.0015  0.0006 -0.0013 -0.0009
+PANEL_IMPACT341  0.0002  0.0000  0.0000  0.0003  0.0001  0.0001
+PANEL_IMPACT410 -0.0000  0.0001 -0.0002  0.0002 -0.0001 -0.0001
+PANEL_IMPACT468  0.0002  0.0003  0.0001  0.0009  0.0001  0.0008
+PID_NUM          0.0204  0.0281  0.0044  0.0394  0.0225  0.0246
+SAMPLE_COVERAGE  0.0020  0.0017  0.0017  0.0019  0.0016  0.0010
+SAMPLE_ORDER     0.0002 -0.0003  0.0001  0.0004  0.0005  0.0024
+SEQ_LAG_YEARS    0.0176  0.0077  0.0083  0.0240  0.0297  0.0147
+T                0.1767  0.1838  0.2515  0.0629  0.1467  0.1433
+TUMOR_PURITY     0.0011  0.0023  0.0022  0.0011  0.0010  0.0008
+결과                 간       뇌     복강내    부담≥3       뼈       폐
+item                                                        
+A_시기          0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+A_전체          0.0092  0.0191  0.0097  0.0176  0.0222  0.0109
+A_품질          0.0113  0.0155  0.0095  0.0187  0.0212  0.0101
+C             0.0212  0.0077  0.0064  0.0234  0.0157  0.0190
+G             0.0213  0.0193  0.0251  0.0239  0.0145  0.0179
+NULL_BINARY   0.0000  0.0005  0.0001 -0.0002 -0.0005 -0.0005
+NULL_NORMAL   0.0006 -0.0014 -0.0007  0.0015  0.0005 -0.0002
+NULL_RANKINT -0.0005 -0.0008 -0.0000  0.0025  0.0020 -0.0014
+PID_NUM       0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+T             0.1665  0.2401  0.2222  0.0636  0.1564  0.1428

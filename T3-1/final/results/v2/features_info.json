@@ -1,0 +1,86 @@
+{
+  "primary": {
+    "N": 11741,
+    "A": [
+      "PANEL_IMPACT341",
+      "PANEL_IMPACT410",
+      "PANEL_IMPACT468",
+      "PID_NUM",
+      "SAMPLE_ORDER",
+      "TUMOR_PURITY",
+      "SAMPLE_COVERAGE",
+      "SEQ_LAG_YEARS"
+    ],
+    "clinical": [
+      "AGE_AT_SEQUENCING",
+      "SEX_MALE",
+      "TMB_NONSYNONYMOUS",
+      "FGA",
+      "MSI_SCORE",
+      "MSI_Do not report",
+      "MSI_Indeterminate",
+      "MSI_Instable",
+      "MSI_Stable"
+    ],
+    "유전체 특징 수": 236,
+    "사건 수": {
+      "DMETS_DX_LUNG": 3705,
+      "DMETS_DX_LIVER": 3944,
+      "DMETS_DX_BONE": 3191,
+      "DMETS_DX_CNS_BRAIN": 1114,
+      "DMETS_DX_INTRA_ABDOMINAL": 2960,
+      "HIGH_BURDEN": 5940
+    },
+    "유병률": {
+      "DMETS_DX_LUNG": 0.3156,
+      "DMETS_DX_LIVER": 0.3359,
+      "DMETS_DX_BONE": 0.2718,
+      "DMETS_DX_CNS_BRAIN": 0.0949,
+      "DMETS_DX_INTRA_ABDOMINAL": 0.2521,
+      "HIGH_BURDEN": 0.5059
+    }
+  },
+  "sensitivity": {
+    "N": 21546,
+    "A": [
+      "PANEL_IMPACT341",
+      "PANEL_IMPACT410",
+      "PANEL_IMPACT468",
+      "PID_NUM",
+      "SAMPLE_ORDER",
+      "TUMOR_PURITY",
+      "SAMPLE_COVERAGE",
+      "SEQ_LAG_YEARS"
+    ],
+    "clinical": [
+      "AGE_AT_SEQUENCING",
+      "SEX_MALE",
+      "TMB_NONSYNONYMOUS",
+      "FGA",
+      "MSI_SCORE",
+      "MSI_Do not report",
+      "MSI_Indeterminate",
+      "MSI_Instable",
+      "MSI_NA",
+      "MSI_Stable",
+      "SAMPLE_TYPE_MET"
+    ],
+    "유전체 특징 수": 243,
+    "사건 수": {
+      "DMETS_DX_LUNG": 7929,
+      "DMETS_DX_LIVER": 8793,
+      "DMETS_DX_BONE": 7197,
+      "DMETS_DX_CNS_BRAIN": 2921,
+      "DMETS_DX_INTRA_ABDOMINAL": 6159,
+      "HIGH_BURDEN": 12627
+    },
+    "유병률": {
+      "DMETS_DX_LUNG": 0.368,
+      "DMETS_DX_LIVER": 0.4081,
+      "DMETS_DX_BONE": 0.334,
+      "DMETS_DX_CNS_BRAIN": 0.1356,
+      "DMETS_DX_INTRA_ABDOMINAL": 0.2859,
+      "HIGH_BURDEN": 0.586
+    }
+  }
+}

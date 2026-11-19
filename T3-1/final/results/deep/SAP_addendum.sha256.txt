@@ -1,0 +1,2 @@
+SAP_addendum.md 확정 시각: 2026-09-15 10:43:02 KST
+b84bae03c0693a16ea67eebb33853a5ac08a3f5382e91d1f2236751ebfb4761f  SAP_addendum.md

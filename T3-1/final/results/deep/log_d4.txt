@@ -1,0 +1,42 @@
+a 원발암 11674
+  wls_results = wls_model.fit(method=wls_method2)
+  wls_results = wls_model.fit(method=wls_method2)
+b +추적 스플라인 11674
+  wls_results = wls_model.fit(method=wls_method2)
+  wls_results = wls_model.fit(method=wls_method2)
+c 사망자만 +OS 스플라인 4561
+  wls_results = wls_model.fit(method=wls_method2)
+  wls_results = wls_model.fit(method=wls_method2)
+d OS>=36개월 +추적 스플라인 2538
+  wls_results = wls_model.fit(method=wls_method2)
+  wls_results = wls_model.fit(method=wls_method2)
+e +추적 +시퀀싱 시점 전이 11674
+                  model      n                term     rr  ci_lo  ci_hi
+0                 a 원발암  11674  panel[T.IMPACT341]  1.406  1.349  1.465
+1                 a 원발암  11674  panel[T.IMPACT410]  1.216  1.181  1.251
+2                 a 원발암  11674               pid_z  0.870  0.860  0.881
+3            b +추적 스플라인  11674  panel[T.IMPACT341]  1.086  1.040  1.135
+4            b +추적 스플라인  11674  panel[T.IMPACT410]  1.042  1.011  1.074
+5            b +추적 스플라인  11674               pid_z  0.956  0.942  0.971
+6       c 사망자만 +OS 스플라인   4561  panel[T.IMPACT341]  1.074  1.024  1.127
+7       c 사망자만 +OS 스플라인   4561  panel[T.IMPACT410]  1.038  1.003  1.075
+8       c 사망자만 +OS 스플라인   4561               pid_z  0.963  0.946  0.980
+9   d OS>=36개월 +추적 스플라인   2538  panel[T.IMPACT341]  0.839  0.534  1.319
+10  d OS>=36개월 +추적 스플라인   2538  panel[T.IMPACT410]  0.854  0.665  1.098
+11  d OS>=36개월 +추적 스플라인   2538               pid_z  1.163  0.297  4.557
+12     e +추적 +시퀀싱 시점 전이  11674  panel[T.IMPACT341]  1.033  0.991  1.077
+13     e +추적 +시퀀싱 시점 전이  11674  panel[T.IMPACT410]  1.015  0.987  1.044
+14     e +추적 +시퀀싱 시점 전이  11674               pid_z  0.979  0.965  0.992
+           n  mean_count   dead  os_median  met_at_seq_yes  met_at_seq_na
+decile                                                                   
+D1      1165       3.997  0.669      19.29           0.877          0.061
+D2      1169       3.672  0.549      26.91           0.779          0.127
+D3      1172       3.313  0.494      28.09           0.743          0.142
+D4      1173       3.132  0.399      33.02           0.673          0.205
+D5      1173       3.197  0.398      30.33           0.675          0.208
+D6      1172       3.049  0.385      26.78           0.683          0.214
+D7      1171       3.022  0.328      24.77           0.700          0.168
+D8      1168       2.882  0.266      19.96           0.650          0.236
+D9      1155       2.911  0.241      16.07           0.672          0.223
+D10     1174       2.591  0.226      12.48           0.651          0.270
+{'RR341 by model': {'a 원발암': 1.406, 'b +추적 스플라인': 1.086, 'c 사망자만 +OS 스플라인': 1.074, 'd OS>=36개월 +추적 스플라인': 0.839, 'e +추적 +시퀀싱 시점 전이': 1.033}, '해석 규칙 판정': '구분 불가', 'a→b 로그RR 감소 비율(추적)': 0.757, 'b→e 로그RR 추가 감소 비율(선택 대리)': 0.149}
